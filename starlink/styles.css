@@ -82,8 +82,9 @@ button {
 */
 
 header {
-  background-image:
-    url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");
+  background-image: radial-gradient(at left center, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   padding: 0 32px;
 }
