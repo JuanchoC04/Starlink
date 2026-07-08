@@ -188,7 +188,7 @@ nav {
 }
 
 /*
-  ====== SECCIÓN DE PLANES ======
+  ====== PLAN SECTION ======
 */
 .plan-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -289,16 +289,26 @@ div>ul {
 }
 
 /*
-  ====== SECCIÓN LLUVIA ======
+  ====== RAIN AND CAR SECTION ======
 */
 .rain-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+  background-image: radial-gradient(at left center, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
     url(" https://starlink.com/assets-new/images/landing/field/v4_lightning.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 16px 32px;
-  min-height: 100vh;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.car-section {
+  background-image: radial-gradient(at left center, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(" https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 16px 32px;
+  min-height: 90vh;
   width: 100%;
 }
 
@@ -307,4 +317,78 @@ div>ul {
   grid-template-columns: 50% 50%;
   height: 100%;
   justify-content: center;
+}
+
+#rain-content h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#rain-content p {
+  font-size: 21px;
+  font-weight: 400;
+  color: #a1a1a1;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+#rain-content>div {
+  padding: 30% 0 30% 30%;
+}
+
+/*CARRUSEL SECTION*/
+
+.carrusel-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.778)),
+    url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 0px;
+}
+
+.carrusel-section h1 {
+  padding-bottom: 64px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#carrusel-content {
+  gap: 64px 0;
+}
+
+#carrusel-content p {
+  font-size: 21px;
+  font-weight: 400;
+  color: #a1a1a1;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.square-carrusel-content {
+  src: url(https://starlink.com/assets-new/images/landing/field/v4_montana_dusk_sky.webp);
+  border-radius: 12px;
+  min-height: 200px;
+}
+
+.scroll-carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 24px;
+  scroll-behavior: smooth;
+  padding-bottom: 16px;
+}
+
+
+.slide-carrusel {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-carrusel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
