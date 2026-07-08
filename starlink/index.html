@@ -61,57 +61,77 @@
   </header>
   <!--AQUÍ EMPEZAMOS A HACER EL MAIN-->
   <main>
-    <!--SECTION DE PLANES DE STARLINK-->
-    <section class="plan-section flex-column">
-      <div class="flex column flex-main-center flex-secondary-center">
-        <!--BOTONES-->
+    <!-- SECTION DE PLANES DE STARLINK -->
+    <section class="plan-section">
+      <div class="plan-wrapper flex column flex-secondary-center">
+
+        <!-- BOTONES -->
         <div class="row flex-main-center flex-secondary-center buttons-menu">
           <button class="button-active">En casa</button>
           <button class="transparent button-inactive">En cualquier lugar</button>
         </div>
-        <!--PLANES-->
-        <div id="plan-content" class="flex row">
-          <div id="square-plan-content" class="flex column flex-main-space-between">
-            <div>
+
+        <!--GRID DE PLANES-->
+        <div id="plan-content">
+
+          <!-- PLAN 1 -->
+          <div class="square-plan-content flex column flex-main-space-between">
+            <div class="plan-info">
               <h1>Residencial: 100 Mb/s</h1>
               <p>Hasta 100 Mb/s. Servicio de internet estable y asequible en el hogar. Datos ilimitados.</p>
             </div>
-            <div>
-              <p>DESDE</p>
-              <h2>35 €<span>/mes</span></h2>
-            </div>
-          </div>
-          <div id="square-plan-content" class="flex column flex-main-space-between">
-            <div>
-              <h1>Residencial: 100 Mb/s</h1>
-              <p>Hasta 100 Mb/s. Servicio de internet estable y asequible en el hogar. Datos ilimitados.</p>
-            </div>
-            <div>
-              <p>DESDE</p>
-              <h2>35 €<span>/mes</span></h2>
-            </div>
-          </div>
-          <div id="square-plan-content" class="flex column flex-main-space-between">
-            <div>
-              <h1>Residencial: 100 Mb/s</h1>
-              <p>Hasta 100 Mb/s. Servicio de internet estable y asequible en el hogar. Datos ilimitados.</p>
-            </div>
-            <div>
-              <p>DESDE</p>
+            <div class="plan-price">
+              <p class="desde-text">DESDE</p>
               <h2>35 €<span>/mes</span></h2>
             </div>
           </div>
 
-        </div>
-        <div>
+          <!-- PLAN 2 -->
+          <div class="square-plan-content flex column flex-main-space-between">
+            <div class="plan-info">
+              <h1>Residencial: 200 Mb/s</h1>
+              <p>Hasta 200 Mb/s. Servicio de internet rápido y estable para uso diario en el hogar con más dispositivos.
+                Datos ilimitados.</p>
+            </div>
+            <div class="plan-price">
+              <p class="desde-text">DESDE</p>
+              <h2>45 €<span>/mes</span></h2>
+            </div>
+          </div>
+
+          <!-- PLAN 3 -->
+          <div class="square-plan-content flex column flex-main-space-between">
+            <div class="plan-info">
+              <h1>Residencial Max</h1>
+              <p>Nuestro servicio de internet doméstico de mayor rendimiento con las velocidades máximas disponibles.
+              </p>
+            </div>
+            <div>
+              <ul id="plan-info">
+                <li>Hasta más de 400 Mbps</li>
+                <li>Datos ilimitados</li>
+                <li>El mejor wifi</li>
+              </ul>
+            </div>
+            <div class="plan-price">
+              <p class="desde-text">DESDE</p>
+              <h2>65 €<span>/mes</span></h2>
+            </div>
+          </div>
+
+        </div> <!-- FIN DEL GRID -->
+
+        <!-- TEXTO LEGAL (Fuera del grid para alinearse abajo en el centro) -->
+        <div class="legal-text">
           <p>Las velocidades indicadas son las máximas disponibles, no están garantizadas y serán más lentas durante los
             momentos de congestión.</p>
         </div>
+
       </div>
     </section>
 
-    <section>
-      <!--AQUÍ AÑADIRÍA LA TERCERA SECCIÓN DONDE ESTÁ LA COMPARACIÓN DE PLANES-->
+    <!-- OTRAS SECCIONES -->
+    <section class="next-section">
       <h2></h2>
     </section>
   </main>

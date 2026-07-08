@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
-  ====== VARIABLES ======
+  ======VARIABLES======
 */
 :root {
+  /*
+    Las variables son peque;os contenedores de informacion que puedes utilizar
+    para reutilizar un estilo declarandolo una sola vez y utilizar ese estilo por toda
+    la pagina
+  */
   --text-color-main: white;
   --size-titles: 64px;
   --size-subtitles: 24px;
@@ -15,13 +20,11 @@
 }
 
 /*
-  ====== GENERALES ======
+  ======GENERALES======
 */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* Asegura que los paddings no alteren el ancho total */
   font-family: "Roboto", sans-serif;
   color: var(--text-color-main);
 }
@@ -36,11 +39,10 @@ a {
 
 button {
   border: none;
-  cursor: pointer;
 }
 
 /*
-  ====== REUTILIZABLES ======
+  ======REUTILIZABLES======
 */
 .row {
   display: flex;
@@ -76,8 +78,9 @@ button {
 }
 
 /*
-  ====== HEADER ======
+  ======ESPECIFICOS======
 */
+
 header {
   background-image: radial-gradient(at left center, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");
   background-size: cover;
@@ -89,6 +92,14 @@ header {
 nav {
   padding: 32px 0px 0 0;
 }
+
+.plan-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 96px 32px 112px;
+}
+
 
 .circular-button {
   border-radius: 100%;
@@ -187,89 +198,48 @@ nav {
   border-radius: 6px;
 }
 
-/*
-  ====== SECCIÓN DE PLANES ======
-*/
-.plan-section {
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%),
-    url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
-  background-size: cover;
-  background-position: center;
-  padding: 96px 20px 112px;
-}
-
-.plan-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+#square-plan-content {
+  background-color: rgb(19, 19, 19);
+  border-radius: 8px;
+  height: 200px;
+  width: 400px;
+  padding: 24px;
 }
 
 #plan-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  width: 100%;
-  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.square-plan-content {
-  background-color: rgb(19, 19, 19);
-  backdrop-filter: blur(4px);
-  border-radius: 12px;
-  padding: 32px;
-  min-height: 320px;
-}
-
-.plan-info h1 {
-  font-size: 20px;
+#plan-content>div>p {
+  font-size: var(--size-paragraphs);
+  color: rgb(145, 145, 145);
   font-weight: 600;
-  margin-bottom: 12px;
-  letter-spacing: -0.3px;
+  line-height: 30px;
 }
 
-.plan-info p {
-  font-size: 13px;
-  color: #a1a1a1;
-  line-height: 1.5;
+#square-plan-content>div>h1 {
+  font-weight: 600;
+  font-size: 30px;
 }
 
-.desde-text {
-  font-size: 11px;
-  color: #757575;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 4px;
-  line-height: normal;
+#square-plan-content>div>h2 {
+  font-weight: 600;
+  font-size: 48px;
 }
 
-.plan-price h2 {
-  font-size: 40px;
-  font-weight: 700;
-  display: flex;
-  align-items: baseline;
+#square-plan-content>div>p {
+  font-size: var(--size-paragraphs);
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+  line-height: 30px;
 }
 
-.plan-price h2 span {
-  font-size: 14px;
-  color: #757575;
-  margin-left: 4px;
+#square-plan-content>div>h2>span {
+  font-size: var(--size-highlights-paragraphs);
+  color: rgb(145, 145, 145);
 }
 
-#plan-info>ul>li {
-  font-size: 13px;
-  color: #a1a1a1;
-  line-height: 1.5;
-}
-
-/* TEXTO LEGAL INFERIOR*/
-.nota-text {
-  margin-top: 40px;
-  text-align: center;
-  max-width: 800px;
-}
-
-.nota-text p {
-  font-size: 11px;
-  color: #666666;
-  line-height: 1.6;
+#plan-column {
+  padding: 50px;
 }
