@@ -133,7 +133,7 @@ nav {
 }
 
 .button-nohightlight {
-  background-color: rgb(67, 67, 67);
+  background-color: rgba(37, 39, 43, 0.733);
   color: white;
 }
 
@@ -191,11 +191,13 @@ nav {
   ====== SECCIÓN DE PLANES ======
 */
 .plan-section {
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%),
-    url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://starlink.com/assets-new/images/landing/illustrations/illustration_07.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
   padding: 96px 20px 112px;
+  max-height: 900px;
 }
 
 .plan-wrapper {
@@ -233,6 +235,17 @@ nav {
   line-height: 1.5;
 }
 
+div>ul>li {
+  font-size: 13px;
+  color: #a1a1a1;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+div>ul {
+  padding: 0 40px;
+}
+
 .desde-text {
   font-size: 11px;
   color: #757575;
@@ -261,7 +274,8 @@ nav {
   line-height: 1.5;
 }
 
-/* TEXTO LEGAL INFERIOR*/
+/* TEXTO NOTA INFERIOR*/
+
 .nota-text {
   margin-top: 40px;
   text-align: center;
@@ -272,4 +286,18 @@ nav {
   font-size: 11px;
   color: #666666;
   line-height: 1.6;
+}
+
+/*
+  ====== SECCIÓN LLUVIA ======
+*/
+.rain-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(" https://starlink.com/assets-new/images/landing/field/v4_lightning.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  min-height: 100vh;
+  width: 100%;
 }
