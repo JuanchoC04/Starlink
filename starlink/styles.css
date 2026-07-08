@@ -93,6 +93,14 @@ nav {
   padding: 32px 0px 0 0;
 }
 
+.plan-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 96px 32px 112px;
+}
+
+
 .circular-button {
   border-radius: 100%;
   padding: 10px;
@@ -188,4 +196,45 @@ nav {
   font-size: var(--size-paragraphs);
   font-weight: 600;
   border-radius: 6px;
+}
+
+#plan-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  margin: 20px 0;
+}
+
+#square-plan-content>div>h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#square-plan-content>div>h2 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+#square-plan-content>div>p {
+  font-size: var(--size-paragraphs);
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+  line-height: 30px;
+}
+
+#square-plan-content>div>h2>span {
+  font-size: var(--size-highlights-paragraphs);
+  color: rgb(145, 145, 145);
+}
+
+#plan-column {
+  padding: 50px;
+}
+
+#square-plan-content {
+  background-color: rgb(19, 19, 19);
+  border-radius: 8px;
+  height: 200px;
+  width: 400px;
+  padding: 24px;
 }
