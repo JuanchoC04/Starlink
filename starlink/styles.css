@@ -143,7 +143,7 @@ nav {
   margin-right: 16px;
 }
 
-#header-content {
+#header-section {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100%;
@@ -339,9 +339,9 @@ div>ul {
 /*CARRUSEL SECTION*/
 
 .carrusel-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.778)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.778)),
     url("https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp");
-  background-size: 50%;
+  background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
   padding: 64px 0px;
@@ -354,11 +354,8 @@ div>ul {
   font-weight: 600;
 }
 
-#carrusel-content {
-  gap: 64px 0;
-}
 
-#carrusel-content p {
+#carrusel p {
   font-size: 21px;
   font-weight: 400;
   color: #a1a1a1;
@@ -375,20 +372,26 @@ div>ul {
 .scroll-carrusel {
   display: flex;
   overflow-x: auto;
-  gap: 24px;
+  gap: 32px;
   scroll-behavior: smooth;
-  padding-bottom: 16px;
+  padding: 48px 16px 16px 16px;
+  margin: 0 0 32px 0
 }
 
 
 .slide-carrusel {
-  width: 20%;
+  width: 33%;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  margin: ;
 }
 
 .slide-carrusel img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  object-fit: cover;
 }
